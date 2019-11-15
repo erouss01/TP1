@@ -106,6 +106,7 @@ public class Enseignant extends Personne {
     public boolean enSousService(){
         float ht = heurePlannifiees ();
         float hp = heuresPrevues() ; 
+        //si le nombre d'heures plannifiess< heures prévues alors sous services
         if (ht < hp){
             return true ;
         }
